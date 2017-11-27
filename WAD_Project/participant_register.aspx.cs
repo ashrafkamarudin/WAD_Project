@@ -172,7 +172,7 @@ public partial class participant_register : System.Web.UI.Page
 
     public int packdiscount(int totl, int disc)
     {
-        disc = totl * (disc / 100);
+        disc = ((totl*disc) / 100);
         return disc;
     }
     protected void btnCancel_Click(object sender, EventArgs e)

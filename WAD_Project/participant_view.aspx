@@ -71,13 +71,14 @@
     <br />
     Total Amt to pay : RM<asp:Label ID="lblTotal" runat="server"></asp:Label>
     <br />
+    <asp:Label ID="lblTest" runat="server"></asp:Label>
+    <br />
     <asp:Button ID="btnPay" runat="server" Text="Paynow?" />
     <br />
     <br />
     <br />
     <asp:Button ID="lblDone" runat="server" onclick="lblDone_Click" Text="Done" />
     <br />
-    <asp:Label ID="lblTest" runat="server"></asp:Label>
 </div>
     </div>
 </asp:Content>

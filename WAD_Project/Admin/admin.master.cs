@@ -9,7 +9,12 @@ public partial class Admin_admin : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        lblName.Text = Session["name"].ToString();
+        if (Session["name"] != null)
+        {
+            lblName.Text = Session["name"].ToString();
+        }
+        else
+            Response.Redirect("../landing_page.aspx");
     }
     protected void btmLogout_Click(object sender, EventArgs e)
     {

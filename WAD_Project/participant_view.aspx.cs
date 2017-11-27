@@ -68,13 +68,13 @@ public partial class participant_view : System.Web.UI.Page
         if (catg == "3"  || catg == "5"){
         lblCatg.Text = "Kid Superhero</br>Age 5 - 12 years old";
         lblCatDist.Text = catg + "KM";
-        lblCatPrice.Text = "RM25";
+        lblCatPrice.Text = "25";
         }
         else 
         {
             lblCatg.Text = "Adult Superhero</br>Age 13 - 45 years old";
             lblCatDist.Text = catg + "KM";
-            lblCatPrice.Text = "RM40";
+            lblCatPrice.Text = "40";
         }
 
         if (medal == "True")
