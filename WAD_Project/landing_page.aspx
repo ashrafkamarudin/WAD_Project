@@ -293,9 +293,10 @@
                             onclick="ImageButton1_Click" />
                     </td>
                 <td class="style43" bgcolor="#CCCCCC" align="center">&nbsp;&nbsp;
-                    <asp:TextBox ID="TextBox3" runat="server" Width="154px"></asp:TextBox>
+                    <asp:TextBox ID="txtIC" runat="server" Width="154px"></asp:TextBox>
 &nbsp;&nbsp;
-                    <asp:Button ID="Button2" runat="server" Text="CHECK!" />
+                    <asp:Button ID="btnCheck" runat="server" Text="CHECK!" 
+                        onclick="btnCheck_OnClick" />
                     <br />
                     ***insert your ic number***</td></tr></table>
                 

@@ -26,11 +26,11 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <!--<td>
                 Age</td>
             <td>
                 <asp:Label ID="lblAge" runat="server"></asp:Label>
-            </td>
+            </td>-->
         </tr>
         <tr>
             <td>
@@ -40,8 +40,7 @@
             </td>
         </tr>
         <tr>
-            <td>
-                Contact Number</td>
+            <td>Contact Number</td>
             <td>
                 <asp:Label ID="lblNumber" runat="server"></asp:Label>
             </td>
@@ -56,14 +55,29 @@
     </table>
     <br />
     <h2>Package Info</h2>
-    <asp:Label ID="lblPackage" runat="server"></asp:Label>
+    <table border="1" align="center">
+            <tr><td class="style21" bgcolor="White">Category</td><td class="style20" 
+                    bgcolor="White">Distance(KM)</td>
+                <td class="style44" bgcolor="White">Price</td></tr>
+            <tr><td class="style21" bgcolor="#FFCC66"><asp:Label ID="lblCatg" runat="server"></asp:Label></td><td class="style20" 
+                    bgcolor="#FFCC66"><asp:Label ID="lblCatDist" runat="server"></asp:Label></td>
+                <td class="style44" bgcolor="#FFCC66"><asp:Label ID="lblCatPrice" runat="server"></asp:Label></td></tr>
+    </table>
+    
     <h2>Add-Ons</h2>
     <asp:Label ID="lblAddons" runat="server"></asp:Label>
-    <h2>Total</h2>
-    <asp:Label ID="lblTotal" runat="server"></asp:Label>
+    <h2>Pricing</h2>
+    Discount applied: RM<asp:Label ID="lblDiscount" runat="server"></asp:Label>
+    <br />
+    Total Amt to pay : RM<asp:Label ID="lblTotal" runat="server"></asp:Label>
+    <br />
+    <asp:Button ID="btnPay" runat="server" Text="Paynow?" />
     <br />
     <br />
-    <asp:Label ID="Label1" runat="server"></asp:Label>
+    <br />
+    <asp:Button ID="lblDone" runat="server" onclick="lblDone_Click" Text="Done" />
+    <br />
+    <asp:Label ID="lblTest" runat="server"></asp:Label>
 </div>
     </div>
 </asp:Content>

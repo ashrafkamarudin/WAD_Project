@@ -14,7 +14,7 @@ public partial class landing_page : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Session.Clear();
     }
     protected void btnLogin_Click(object sender, EventArgs e)
     {
@@ -41,5 +41,10 @@ public partial class landing_page : System.Web.UI.Page
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
         Response.Redirect("participant_register.aspx");
+    }
+    protected void btnCheck_OnClick(object sender, EventArgs e)
+    {
+        Session["IC"] = txtIC.Text;
+        Response.Redirect("participant_view.aspx");
     }
 }
